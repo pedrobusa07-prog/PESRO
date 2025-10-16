@@ -1,11 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+    <title>Primeira Aula de HTML - Tags de Texto Padrão</title>
 </head>
 <body>
-    <p>Olá pesso</p>
+
+    <h1>Primeira Aula de HTML - Tags de Texto</h1>
+
+    <p>Olá, pessoal! Nesta aula, vamos aprender sobre as tags de texto mais comuns e como elas são usadas para estruturar o conteúdo em uma página web.</p>
+
+    <h2>Tags de Títulos</h2>
+    
+    <p>As tags de título vão de <strong>&lt;h1&gt;</strong> (o mais importante) a <strong>&lt;h6&gt;</strong> (o menos importante). Elas definem a hierarquia do conteúdo.</p>
+
+    <h3>Exemplos de Títulos</h3>
+    <h1>Título Principal (h1)</h1>
+    <h2>Subtítulo Importante (h2)</h2>
+    <h3>Subtítulo Menos Importante (h3)</h3>
+    <h4>Outro Nível de Subtítulo (h4)</h4>
+    <h5>Título de Nível 5 (h5)</h5>
+    <h6>Título de Nível 6 (h6)</h6>
+    
+    <hr>
+
+    <h2>Tags de Parágrafos e Quebra de Linha</h2>
+
+    <p>A tag <strong>&lt;p&gt;</strong> cria um parágrafo. Note que o navegador adiciona um espaço (margem) antes e depois de cada parágrafo.</p>
+    
+    <p>Este é um parágrafo. Ele ocupa um bloco de texto completo.</p>
+    <p>Este é outro parágrafo.<br>Esta é uma linha quebrada usando a tag <strong>&lt;br&gt;</strong>. O &lt;br&gt; é uma tag de linha simples, sem margem extra.</p>
+    
+    <hr>
+
+    <h2>Tags de Formatação e Ênfase</h2>
+    <p>Essas tags servem para dar importância, ênfase ou outro tipo de formatação ao texto.</p>
+    
+    <p>
+        <strong>&lt;b&gt;</strong> e <strong>&lt;strong&gt;</strong>: Texto em <b>negrito</b> e <strong>texto importante</strong>.<br>
+        <strong>&lt;i&gt;</strong> e <strong>&lt;em&gt;</strong>: Texto em <i>itálico</i> e <em>texto com ênfase</em>.<br>
+        <strong>&lt;u&gt;</strong>: <u>Texto sublinhado</u>.<br>
+        <strong>&lt;small&gt;</strong>: <small>Texto menor<0/small>.<br>
+        <strong>&lt;mark&gt;</strong>: Texto <mark>marcado</mark>.<br>
+        <strong>&lt;del&gt;</strong>: <del>Texto deletado ou excluído</del>.<br>
+        <strong>&lt;ins&gt;</strong>: <ins>Texto inserido</ins>.<br>
+        <strong>&lt;sup&gt;</strong> e <strong>&lt;sub&gt;</strong>: Texto com <sup>sobrescrito</sup> e com <sub>subscrito</sub> (bom para fórmulas: H<sub>2</sub>O).
+    </p>
+
+    <hr>
+
+    <h2>Tags de Citação e Código</h2>
+    
+    <h3>Citação em Bloco (&lt;blockquote&gt;)</h3>
+    <p>Para citações longas que se destacam do texto principal:</p>
+    <blockquote>
+        Este bloco de texto é uma citação longa. O navegador geralmente o exibe com uma indentação nas laterais para destacá-lo visualmente. O &lt;blockquote&gt; é ideal para citar uma fonte externa.
+    </blockquote>
+    
+    <h3>Citação Curta e Código</h3>
+    <p>
+        <strong>&lt;q&gt;</strong>: Uma citação curta, como: <q>Este é um exemplo de citação curta</q>.<br>
+        <strong>&lt;code&gt;</strong>: Para trechos de código pequenos, como a variável <code>let nome = "Turma";</code>.
+    </p>
+    
+    <h3>Texto Pré-formatado (&lt;pre&gt;)</h3>
+    <p>O <code>&lt;pre&gt;</code> preserva todos os espaços e quebras de linha que você digitar, sendo ótimo para exibir código ou texto formatado:</p>
+    <pre>
+function mostrar() {
+    // Note que este código
+    //               mantém o espaçamento
+    //      exatamente como digitado.
+    console.log("Olá!");
+}
+    </pre>
+
+    <hr>
+
+    <h2>Tags de Listas</h2>
+
+    <h3>Lista Não Ordenada (&lt;ul&gt; - Unordered List)</h3>
+    <p>Usada para itens sem uma ordem específica (geralmente com marcadores).</p>
+    <ul>
+        <li>Item um (usando a tag &lt;li&gt;)</li>
+        <li>Item dois</li>
+        <li>Item três</li>
+    </ul>
+    
+    <h3>Lista Ordenada (&lt;ol&gt; - Ordered List)</h3>
+    <p>Usada para itens em uma sequência específica (numerada ou com letras).</p>
+    <ol>
+        <li>Primeiro passo</li>
+        <li>Segundo passo</li>
+        <li>Terceiro passo</li>
+    </ol>
+
+    <input type="range" name="" id="">
+
 </body>
 </html>
