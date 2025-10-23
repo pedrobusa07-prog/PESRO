@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>1. Formulário de Contato</legend>
+
+            <label for="name">Nome completo:</label>
+            <input type="text" id="name" placeholder="Seu nome e sobrenome" required>
+            <br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Configurações e Preferências</legend>
+
+            <div>
+                <label for="areaInteresse">Área de Interesse:</label>
+                <select id="areaInteresse" name="interesse">
+                    <option value="">-- Selecione uma opção --</option>
+                    <optgroup label="Desenvolvimento">
+                        <option value="frontend">Front-End</option>
+                        <option value="backend">Back-End</option>
+                    </optgroup>
+                    <optgroup label="Design">
+                        <option value="ux_ui">UX/UI</option>
+                        <option value="grafico">Design Gráfico</option>
+                    </optgroup>
+                    <option value="outros">Outros</option>
+                </select>
+                <br><br>
+            </div>
+
+            <p>Deseja receber novidades por e-mail?</p>
+            <input type="radio" id="simNovidades" name="novidades" value="sim" required>
+            <label for="simNovidades">Sim</label>
+
+            <input type="radio" id="naoNovidades" name="novidades" value="nao">
+            <label for="naoNovidades">Não</label>
+            <br><br>
+
+            <div>
+                <label for="qtdCursos">Quantos cursos de HTML/CSS você já fez? (0 a 10)</label><br>
+                <input type="number" id="qtdCursos" name="cursos_feitos" min="0" max="10" step="1" value="0">
+                <br><br>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Mensagem</legend>
+            <div>  
+                <label for="mensagem">Deixe sua mensagem ou dúvida:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="6" cols="50" 
+                    placeholder="Digite seu feedback ou dúvida" maxlength="500"></textarea>
+                <br><br>
+
+                <input type="checkbox" id="termos" name="termos" required> 
+                <label for="termos">Eu concordo com os termos e condições.</label>
+                <br><br>
+            </div>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetar</button>
+    </form>
+</body>
+</html>
